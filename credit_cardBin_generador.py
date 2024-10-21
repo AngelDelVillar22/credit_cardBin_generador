@@ -1,7 +1,27 @@
-#!/bin/bash
+#!/usr/bin/env python
+#-*- coding: iso-8859-1 -*-
+import getopt
+import time
+import os
+import sys
+import datetime
+from random import randint
 
-echo -e "\e[33mGenerador de Bines Creado Por: 🔮Angel Del Villar🔮\e[0m"
-echo -e "\e[33mBIENVENID@S AL GENERADOR DE BINES,USA ESTE SCRIPT SOLO CON FINES EDUCATIVOS\e[0m"
+version = "1.0.0"
+#Mensaje
+os.system ("clear")
+print("\033[1;32m+\033[1;36m GENERADOR")
+time.sleep(1.2)
+#Informacion de ayuda
+def angeldelvillar ():
+time.sleep(1.2)
+print("")
+print("\033[1;32m Informacion de Termux")
+print("")
+time.sleep(1.6)
+print(" https://t.me/master_Angel_Delvillar")
+print("")
+time.sleep(2.2)
 # Función para generar una fecha aleatoria entre 2023 y 2031
 generate_random_date() {
     local year=$((2023 + RANDOM % 9))
@@ -45,4 +65,5 @@ main() {
     done
 }
 
-main
+if __name__ == '__main__':
+    main(sys.argv[1:])
