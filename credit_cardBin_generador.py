@@ -2,7 +2,6 @@
 
 echo -e "\e[33mGenerador de Bines Creado Por: 🔮Angel Del Villar🔮\e[0m"
 echo -e "\e[33mBIENVENID@S AL GENERADOR DE BINES,USA ESTE SCRIPT SOLO CON FINES EDUCATIVOS\e[0m"
-echo -e "\e[33m
 # Función para generar una fecha aleatoria entre 2023 y 2031
 generate_random_date() {
     local year=$((2023 + RANDOM % 9))
